@@ -2,7 +2,9 @@
 
 目标：从软件计算出发理解计算效率、内存访问和数据复用，为 NPU 架构打基础。主线位于 Stage 01 之后；先修为 C++ 基础、矩阵乘法和基本复杂度。任务预计合计 26–44 小时，诊断另约 30–45 分钟；既有成果经核验可减少重复时间。课业优先，时间超预估时拆分任务，不降低验收标准。Track B 为主。学习资源名称见[资源目录](../resources/learning-resources.md)。
 
-既有项目 [cpp-matmul-performance](https://github.com/lingquan11/cpp-matmul-performance) 应优先盘点、复用和补缺，不复制另建已有代码。本计划未宣称其成果已由学习者独立完成或已在本次运行中验证。任务状态使用 NOT_STARTED / IN_PROGRESS / BLOCKED / COMPLETED；成果状态单独使用 PLANNED / IMPLEMENTED / VERIFIED / INDEPENDENTLY_EXPLAINED，并须各有证据。以下任务初始均为 NOT_STARTED，成果初始为 PLANNED。
+**课程主线与穿插规则**：按 [课程映射](../CURRICULUM_MAP.md) 选择主要大学课程的缓存、性能测量与局部性材料，先用其官方讲义和可用习题建立知识，再复核现有工程。七阶段正式主线仍为 01 后 02；已具备 C++ 和矩阵前置时，可以在 Stage 01 期间低强度盘点既有项目或结合大学课程复习，但不因此自动通过 Stage 02 诊断或里程碑。涉及未掌握的前置知识先补齐，课业优先。
+
+既有项目 [cpp-matmul-performance](https://github.com/lingquan11/cpp-matmul-performance) 应优先盘点、复用和补缺，不复制另建已有代码。本计划未宣称其成果已由学习者独立完成或已在本次运行中验证。任务状态使用 NOT_STARTED / IN_PROGRESS / BLOCKED / COMPLETED；成果状态单独使用 PLANNED / IMPLEMENTED / VERIFIED / INDEPENDENTLY_EXPLAINED，并须各有证据。初始计划任务默认为 NOT_STARTED、成果默认为 PLANNED；当前状态以 [PROGRESS](../PROGRESS.md) 为唯一权威来源。
 
 ## 阶段前诊断
 
@@ -39,7 +41,7 @@
 - Deliverables：带文件链接和证据的盘点表、缺口与后续任务映射。
 - Verification：检查来源与报告原文；有条件时按记录复现，未运行的明确写未复现。
 - Acceptance Criteria：每项成果和贡献都能追溯到具体证据；不重复创建已有实现；未核验内容不标 VERIFIED，也不凭 AI 生成内容标自主完成。
-- Status：NOT_STARTED。
+- Status：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S02-M01-T02：建立或复核基准矩阵乘法
 
@@ -51,7 +53,7 @@
 - Deliverables：已有代码链接或必要补充、构建和运行说明。
 - Verification：手算小矩阵及一个非方阵，与程序结果比较。
 - Acceptance Criteria：结果正确；独立解释索引、维度约束和 O(MNK) 计算量。
-- Status：NOT_STARTED。
+- Status：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S02-M01-T03：复核并补齐正确性测试
 
@@ -63,7 +65,7 @@
 - Deliverables：测试代码或现有测试链接、命令和运行结果。
 - Verification：执行全部测试；可在临时副本中人为引入索引错误，确认测试能够发现。
 - Acceptance Criteria：列出的有效输入通过；非法维度按设计处理；记录容差与环境，测试失败时不标已验证。
-- Status：NOT_STARTED。
+- Status：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ## M02：可信基准与访存分析
 
@@ -79,7 +81,7 @@
 - Deliverables：基准代码链接或补充、命令、环境及原始结果。
 - Verification：重复执行两轮并核查单位、输入、正确性和波动。
 - Acceptance Criteria：按说明可复现；保留多次原始测量，能解释噪声；若用 2MNK 计算 GFLOP/s，明确这一运算计数约定。
-- Status：NOT_STARTED。
+- Status：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S02-M02-T02：分析循环顺序与数据局部性
 
@@ -91,7 +93,7 @@
 - Deliverables：代码或链接、访问示意、原始结果与分析。
 - Verification：变体通过同一测试集，使用 T01 的基准流程。
 - Acceptance Criteria：基于连续访问、复用与尺寸解释观察，同时区分推测与测得结果；没有硬件计数器证据时不断言 Cache miss 的具体变化。
-- Status：NOT_STARTED。
+- Status：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ## M03：分块、SIMD 与实验报告
 
@@ -107,7 +109,7 @@
 - Deliverables：已有实现链接或补充、边界测试与实验数据。
 - Verification：对比基准，包含多个非整除尺寸。
 - Acceptance Criteria：所有测试满足声明容差；解释块大小与平台的影响；不要求一定比基准快。
-- Status：NOT_STARTED。
+- Status：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S02-M03-T02：调查 SIMD 与计算瓶颈
 
@@ -119,7 +121,7 @@
 - Deliverables：实现链接、编译器报告、命令、实验数据与估算过程。
 - Verification：先运行正确性测试，再重复基准；独立复算一个例子。
 - Acceptance Criteria：有证据说明 SIMD 是否生效；解释估算假设与局限，不把估计带宽当作硬件实测值。
-- Status：NOT_STARTED。
+- Status：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S02-M03-T03：撰写可复现实验报告
 
@@ -131,7 +133,7 @@
 - Deliverables：报告、原始数据引用、复现入口。
 - Verification：从干净构建按说明复现至少一组结果。
 - Acceptance Criteria：数据和贡献可追溯，结论不超出证据；能独立解释优化为何可能有效及何时可能失效。
-- Status：NOT_STARTED。
+- Status：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ## 阶段验收与下一步
 

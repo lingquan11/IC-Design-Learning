@@ -37,7 +37,7 @@
 - **Deliverables**：原始题解、分级、核对依据和补救清单。
 - **Verification**：逐项核对，而非以总分抵消缺口。
 - **Acceptance Criteria**：四项均有判定或明确待判、复测方式；不把看过资料当掌握。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S03-M02-T01 ISA 与单周期数据通路
 
@@ -50,7 +50,7 @@
 - **Deliverables**：指令子集、数据通路图、控制表、模型或 RTL、测试及运行记录。
 - **Verification**：用手算指令轨迹逐步核对模型状态；覆盖正负立即数、零寄存器及基本访存。
 - **Acceptance Criteria**：声明指令的状态变化与参考轨迹一致；独立解释每条指令的控制与数据流，明确未实现部分。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S03-M03-T01 流水线与冒险
 
@@ -63,7 +63,7 @@
 - **Deliverables**：流水级图、冒险表、规则、模型或 RTL 与测试。
 - **Verification**：比较逐周期表与实际执行，覆盖依赖、load-use、分支及复位。
 - **Acceptance Criteria**：声明范围内最终状态与顺序参考一致；能解释暂停、转发和控制冒险的代价及未覆盖情形。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S03-M04-T01 Cache 模拟与系统性能
 
@@ -76,7 +76,7 @@
 - **Deliverables**：配置、访问轨迹、手算、模拟器、测试与局限说明。
 - **Verification**：至少覆盖冷缺失、命中、冲突和替换，逐访问对比手算。
 - **Acceptance Criteria**：声明配置下的命中/缺失序列一致；区分模拟结果与真实硬件计数器测量。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S03-M05-T01 简单 RISC-V 子集 CPU
 
@@ -89,4 +89,4 @@
 - **Deliverables**：规格、RTL、测试程序、testbench、运行命令、结果和覆盖缺口。
 - **Verification**：逐步对照预期状态，失败报告输入、周期、期望与实际；修改后运行回归。
 - **Acceptance Criteria**：已声明指令及边界测试通过，能够独立解释一段新程序；清楚说明不支持的指令、异常和不构成完整 RISC-V 一致性验证的范围。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。

@@ -28,7 +28,7 @@
 - **Deliverables**：需求、架构图、微架构说明、测试计划及已有模块映射。
 - **Verification**：用手算样例检查接口和数值约定，并逐条对应测试用例。
 - **Acceptance Criteria**：每条功能要求均可检查，输入范围和不支持事项明确，独立解释数据流。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S07-M01-T02：RTL、自检与交付
 
@@ -41,7 +41,7 @@
 - **Deliverables**：RTL、参考模型、测试、脚本、实际仿真记录、README 和 MVP 总结。
 - **Verification**：按运行说明从干净构建执行回归，逐元素比较；临时注入错误验证测试能报错，再恢复并重跑。
 - **Acceptance Criteria**：声明范围的测试均通过且可复现；能独立解释设计与测试盲区；未验证内容不标 VERIFIED。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ## M02：Intermediate
 
@@ -58,7 +58,7 @@
 - **Deliverables**：修订规格、RTL、控制图、测试计划和实际回归结果。
 - **Verification**：对多个尺寸与独立模型比较并检查存储地址和协议。
 - **Acceptance Criteria**：所有声明支持的输入及边界测试通过；限制、未支持协议和测试缺口明确。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S07-M02-T02：性能模型与综合报告
 
@@ -71,7 +71,7 @@
 - **Deliverables**：模型、仿真与模型对照、综合脚本及报告、PPA 分析和项目总结。
 - **Verification**：对至少两种尺寸手算复核与回归；检查约束有效，报告对应同一版本及配置。
 - **Acceptance Criteria**：模型假设和偏差可解释，报告可追溯且不把教学结果称为工业 sign-off；缺失功耗如实标注。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ## M03：Advanced
 
@@ -88,7 +88,7 @@
 - **Deliverables**：数值规格、实现、输入及参考模型、测试数据和误差报告。
 - **Verification**：覆盖极值、零和典型值；按声明规则逐项比较并记录误差。
 - **Acceptance Criteria**：声明范围内满足事先设定的误差或精确整数规则；如未满足，保留失败和修复记录，不宣称通过。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S07-M03-T02：存储管理、调度与 SoC 集成
 
@@ -101,4 +101,4 @@
 - **Deliverables**：接口及调度说明、实现、测试、实际对照数据、最终 README 与项目总结。
 - **Verification**：在相同输入和计数口径下测试功能及边界，对照原始版本；记录环境和数据来源。
 - **Acceptance Criteria**：三个方面的声明子集均有可运行实现且测试通过、可复现，对照结果支持结论；无提升也可如实验收。任何方面未实现时保留为计划且不得将本任务或高级层标为完成。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。

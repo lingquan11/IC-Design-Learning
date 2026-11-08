@@ -6,6 +6,8 @@ A structured learning journey from digital circuits and RTL design to computer a
 
 ## 从哪里开始
 
+所有新学习会话请先阅读唯一入口 [START_HERE.md](START_HERE.md)，按其中流程读取课程映射和真实进度；此页面仅作仓库介绍。
+
 当前入口：**Stage 01 入阶段诊断 S01-M01-T01**，尚未开始。先按 [第一阶段计划](plans/stage-01-digital-circuits.md) 完成诊断，再按证据调整学习顺序；当前预计每周 6–8 小时，课程繁忙时可以减少或跨周。真实状态见 [PROGRESS](PROGRESS.md)，下一主阶段是矩阵乘法优化，但以阶段验收为准。
 
 | 主线 | 核心目标 |

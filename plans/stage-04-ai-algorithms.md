@@ -37,7 +37,7 @@
 - **Deliverables**：原始作答、判分依据及复测计划。
 - **Verification**：手算与独立脚本或资料交叉核对。
 - **Acceptance Criteria**：四类均有明确状态、证据与必要补救，不能以其他题正确抵消缺口。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S04-M02-T01 GEMM 参考计算与复杂度
 
@@ -50,7 +50,7 @@
 - **Deliverables**：推导、计算脚本、小矩阵结果及内存模型假设。
 - **Verification**：手算非方阵与脚本逐元素比较，检查维度和计数。
 - **Acceptance Criteria**：能对新尺寸独立给出 MAC、约定的 FLOPs 与指定层级下的理想流量，说明理想流量不等于实测。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S04-M03-T01 CNN 卷积与激活
 
@@ -63,7 +63,7 @@
 - **Deliverables**：维度和 MAC 推导、参考脚本、测试输入输出与复用说明。
 - **Verification**：至少覆盖非零填充、步长和多通道中的两种条件，逐元素对照独立预期。
 - **Acceptance Criteria**：声明条件下输出形状和数值匹配；能解释卷积与矩阵计算的关系及计算假设。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S04-M04-T01 Attention 与 Transformer 前向计算
 
@@ -76,7 +76,7 @@
 - **Deliverables**：前向流程与形状表、参考脚本、手算样例、计算与流量估算。
 - **Verification**：检查 Softmax 每行和及数值稳定性；与独立手算对照小样例；说明是否包含 mask、bias 和其他模块。
 - **Acceptance Criteria**：新输入尺寸下能独立推导各关键形状、计算量及二次增长的假设；参考结果与手算在声明容差内一致。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### S04-M05-T01 INT8/INT4 量化与 Roofline
 
@@ -89,4 +89,4 @@
 - **Deliverables**：量化脚本、输入与输出、误差数据、存储计算、Roofline 假设及结论。
 - **Verification**：手算一个量化及饱和边界并核对脚本；检查单位与两种瓶颈上界。
 - **Acceptance Criteria**：能独立解释误差、累加位宽和数据复用的影响；区分理论估算、测量数据和适用范围，不声称低比特必然带来实测加速。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
