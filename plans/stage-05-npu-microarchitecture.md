@@ -28,7 +28,7 @@
 - **Deliverables**：规格、RTL、testbench、运行环境与实际结果。
 - **Verification**：逐周期比较输入、预期及实际输出；注入错误确认测试有效。
 - **Acceptance Criteria**：上述边界通过、输出周期与位宽符合规格；能独立推导一次累加并解释溢出语义，画出量化值到累加及重定标的路径并标记尚未实现部分。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### M02 数据流：S05-M02-T01 小规模脉动阵列与映射
 
@@ -41,7 +41,7 @@
 - **Deliverables**：数据流图、逐周期表、RTL、测试及不同数据流比较。
 - **Verification**：将多个小矩阵（含零、负数及边界）与独立软件结果逐元素对照，并检查周期表。
 - **Acceptance Criteria**：测试结果和数据到达/输出周期均符合规格；用有依据的计数说明一个算例的有效 PE 周期与利用率；明确三种数据流比较的假设。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### M03 存储与搬运：S05-M03-T01 Buffer、DMA 和互连
 
@@ -54,7 +54,7 @@
 - **Deliverables**：容量和带宽计算、存储及互连图、buffer 或控制模块及集成加速器 RTL、testbench、运行结果。
 - **Verification**：用手算小例逐笔核对传输次数；仿真边界、读写冲突约定、满/空或地址边界以及复位；端到端比较完整矩阵计算与独立软件结果，检查启动、完成和数据搬运顺序。
 - **Acceptance Criteria**：数据容量和流量可由任务形状复算；实现模块及集成的固定规模矩阵乘法测试通过，控制和数据搬运顺序与规格一致；明确未实现的 DMA 和 NoC 部分，不将示意设计标记为实物。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### M04 性能与能效：S05-M04-T01 系统建模
 
@@ -67,6 +67,6 @@
 - **Deliverables**：参数表、可复算模型、比较结果与限制说明。
 - **Verification**：对最小实例手工核对次数和单位；与 M02 仿真的周期逐项比较，解释差异。
 - **Acceptance Criteria**：算式、单位和数据来源完整；区分理论上界、模型估计、实测值；若缺少可信能耗参数，仅列公式与所需参数，不虚构结果。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 里程碑独立验收分别以各任务验收为最低要求：M01 独立说明数值格式与边界；M02 给出未经模板代写的新小矩阵周期表；M03 独立推导流量并指出未建模的系统部分；M04 独立解释计算瓶颈和带宽瓶颈随假设变化的条件。全部要求与证据通过后才将对应任务标为 `COMPLETED`；能力解释证据单独记录。

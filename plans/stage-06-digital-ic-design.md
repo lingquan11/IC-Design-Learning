@@ -28,7 +28,7 @@
 - **Deliverables**：源代码引用、测试、脚本、日志、综合网表和环境说明。
 - **Verification**：复跑功能测试、检查综合错误与警告；根据环境可用性对综合网表进行等价或门级功能检查，记录限制。
 - **Acceptance Criteria**：脚本可重现，测试结果有证据，能解释 RTL 中寄存器和主要逻辑如何映射到网表；不能把综合成功当功能正确。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### M02 时序与映射：S06-M02-T01 标准单元映射与 STA
 
@@ -41,7 +41,7 @@
 - **Deliverables**：约束文件、库及角点说明、映射网表、时序报告、差异解释。
 - **Verification**：追踪报告中起点、终点、路径延迟与约束；用单一路径数据检查 slack 计算，并确认实际报告的假设。
 - **Acceptance Criteria**：可解释至少一个真实 setup 报告和 hold 检查的状态；声明未约束路径、时钟不确定性等适用限制；无工具/库时记录阻塞，不编造报告。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### M03 物理实现：S06-M03-T01 教学 RTL-to-GDS 流程
 
@@ -54,7 +54,7 @@
 - **Deliverables**：环境与运行脚本、日志、布局文件、时序/面积报告、检查结果与失败说明。
 - **Verification**：按日志逐阶段确认真实运行结果；用 KLayout 查看生成版图；检查 DRC/LVS 报告而非仅依据版图可打开。
 - **Acceptance Criteria**：在可用环境中重现小设计的流程并解释各步骤；明确完成及失败/跳过的检查、PDK 和约束；不将教学结果称为工业 sign-off 或流片。环境不可用时标记 `BLOCKED` 并记录原因。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 ### M04 PPA：S06-M04-T01 面积、时序与功耗比较
 
@@ -67,6 +67,6 @@
 - **Deliverables**：配置差异、两组真实报告、对比表、运行命令及结论。
 - **Verification**：对两组设计运行相同功能测试；核对报告来源、单位和比较条件；功耗若有估计则说明活动率、模型和角点。
 - **Acceptance Criteria**：面积与时序比较可追溯、可复算；只有具备合适工具、活动率和库时才报告功耗，否则标记未测并解释原因；不声称真实硅片 PPA。
-- **Status**：NOT_STARTED。
+- **Status**：查看 [PROGRESS](../PROGRESS.md)；未列出具体进展的任务按 NOT_STARTED 处理。
 
 里程碑的独立验收除各任务要求外：M01 能在新模块定位网表中的寄存器和逻辑；M02 在新报告中解释时钟、关键路径与 slack；M03 讲清 floorplan、placement、CTS、routing、DRC/LVS 的职责及实际覆盖；M04 解释比较条件及结论边界。证据应链接到实际产物；`VERIFIED` 和 `INDEPENDENTLY_EXPLAINED` 分别记录。
