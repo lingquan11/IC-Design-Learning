@@ -8,7 +8,7 @@ A structured learning journey from digital circuits and RTL design to computer a
 
 所有新学习会话请先阅读唯一入口 [START_HERE.md](START_HERE.md)，按其中流程读取课程映射和真实进度；此页面仅作仓库介绍。
 
-当前入口：**Stage 01 入阶段诊断 S01-M01-T01**，尚未开始。先按 [第一阶段计划](plans/stage-01-digital-circuits.md) 完成诊断，再按证据调整学习顺序；当前预计每周 6–8 小时，课程繁忙时可以减少或跨周。真实状态见 [PROGRESS](PROGRESS.md)，下一主阶段是矩阵乘法优化，但以阶段验收为准。
+当前学习位置、任务状态和下一步以 [PROGRESS](PROGRESS.md) 为准；阶段任务与验收标准见 [路线](ROADMAP.md)。按实际课业负荷安排学习。
 
 | 主线 | 核心目标 |
 |---|---|
@@ -24,6 +24,6 @@ A structured learning journey from digital circuits and RTL design to computer a
 
 ## 真实成果与仪表盘
 
-已有外部工程项目：[C++ 矩阵乘法性能分析与分块优化](https://github.com/lingquan11/cpp-matmul-performance)，包含实现、测试和实验记录；其源码来源、测量条件和局限以原项目说明为准。本体系尚未验收任何里程碑或任务，当前没有进行中的任务；独立掌握的能力和薄弱点待诊断。详见 [PROGRESS](PROGRESS.md)，不以看过的视频或计划任务数代替能力。
+已有外部工程项目：[C++ 矩阵乘法性能分析与分块优化](https://github.com/lingquan11/cpp-matmul-performance)，包含实现、测试和实验记录；其源码来源、测量条件和局限以原项目说明为准。学习进度与验收证据见 [PROGRESS](PROGRESS.md)，不以看过的视频或计划任务数代替能力。
 
 长期目标是建立数学、电路和体系结构基础，完成可信的数字 IC 与 AI 加速器工程实践，并为本科科研和后续深造打基础。开源教学流程、工业 sign-off 和真实流片需明确区分。
