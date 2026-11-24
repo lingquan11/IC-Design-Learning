@@ -1,0 +1,13 @@
+name: check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check README progress, budgets and links
+        run: python3 start/scripts/progress.py --check
