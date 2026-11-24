@@ -37,4 +37,4 @@ A structured learning journey from digital circuits to my own NPU. 从数字逻�
 | E2 | 2×2 输出驻留阵列 SKY130 后端全流程（AI 执行） | 产出 GDS，DRC 0 违例、LVS 一致；布线后 setup −0.25 ns（10 ns 目标）未收敛 | [systolic2x2-asic-backend](https://github.com/lingquan11/systolic2x2-asic-backend) |
 <!-- results:end -->
 
-详见 [results/](results/README.md)。相关仓库：[cpp-matmul-performance](https://github.com/lingquan11/cpp-matmul-performance)（CPU 矩阵乘法）· [AI-Infra-Learning](https://github.com/lingquan11/AI-Infra-Learning)（CUDA 路线）
+详见 [results/](results/README.md)。相关仓库：[cpp-matmul-performance](https://github.com/lingquan11/cpp-matmul-performance)（CPU 矩阵乘法）· [AI-Infra-Learning](https://github.com/lingquan11/AI-Infra-Learning)（CUDA 路线） · 工作流：[learning-workflow](https://github.com/lingquan11/learning-workflow)（三个仓库共用的规则、提示词和进度脚本）
