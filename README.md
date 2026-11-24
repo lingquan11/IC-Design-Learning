@@ -24,7 +24,7 @@ A structured learning journey from digital circuits to my own NPU. 从数字逻�
 | 做实践（RTL、验证、综合；结束时自动归档） | Muse："开始实践" … "结束" |
 | 考核一个做完的理论任务 | Gemini："考核 <任务ID>" |
 | 装环境、配工具 | Muse："准备环境" |
-| 看整条路线 | [ROADMAP](start/ROADMAP.md)：I1 数字逻辑 → I2 总线与跨时钟域 → I3 NPU 设计 → I4 UVM 验证 → I5 后端与演示 |
+| 看整条路线 | [ROADMAP](start/ROADMAP.md)：I1 数字逻辑 → I2 总线与跨时钟域 → I3 NPU 设计 → I4 UVM 验证 → I5 后端与演示；导读见 [reading-map](start/reading-map.md) |
 
 ## 学习过程
 [journey/](journey/README.md)：时间线，理论线和实践线各自的日志、笔记和考核记录。

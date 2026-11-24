@@ -6,6 +6,7 @@
 ## 材料
 - ETH 实验 3 手册（组合电路 Verilog，这里用仿真代替上板）：https://safari.ethz.ch/ddca/spring2026/lib/exe/fetch.php?media=ddca_ss26_lab3_manual.pdf
 - Harris & Harris 第 5.2 节（加法器）
+- 导读：R-I1-10（做前），见 [reading-map](../../../reading-map.md)
 
 ## 步骤
 1. 【me】`results/basics/adder4/`：全加器 → 由 4 个全加器例化出 4 位行波进位加法器（带进位输入和输出）。自检 testbench 穷举全部 512 种输入，期望值用 testbench 中独立的整数加法计算。

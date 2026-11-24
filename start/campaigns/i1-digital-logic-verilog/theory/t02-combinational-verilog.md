@@ -7,6 +7,7 @@
 - ETH DDCA Spring 2026 L2、L3（组合逻辑）、L5（Verilog）讲义：https://safari.ethz.ch/ddca/spring2026/doku.php?id=schedule ；视频：https://www.youtube.com/playlist?list=PL5Q2soXY2Zi9Eo29LMgKVcaydS7V1zZW3
 - Harris & Harris, *Digital Design and Computer Architecture: RISC-V Edition*，第 2 章（组合逻辑）、第 4 章（HDL）、第 5.2 节（加法器）
 - HDLBits：https://hdlbits.01xz.net/wiki/Problem_sets
+- 导读：R-I1-02、R-I1-03（做前），R-I1-04（卡住时），见 [reading-map](../../../reading-map.md)
 - ETH Optional HW1（2025）及官方答案：https://safari.ethz.ch/ddca/spring2025/lib/exe/fetch.php?media=optional_hw1_2025.pdf 、https://safari.ethz.ch/ddca/spring2025/lib/exe/fetch.php?media=optional_hw1_2025_solution.pdf
 
 ## 步骤

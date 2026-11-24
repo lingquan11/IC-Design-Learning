@@ -3,6 +3,9 @@
 - **线**：实践 | **计划用时**：2h | **前置理论**：无（诊断第 5 题已经想过） | **依赖环境**：I1-S01
 - **一句话目标**：走通"写 RTL → 写自检 testbench → 仿真 → lint → 错误注入 → 看波形"整条链路，以后每个模块都照这个流程做
 
+## 材料
+- 导读：R-I1-08、R-I1-09（做前），见 [reading-map](../../../reading-map.md)
+
 ## 步骤
 1. 【me】写 `results/basics/mux2/mux2.v` 和 `results/basics/mux2/mux2_tb.v`：穷举 8 种输入，与独立写出的期望表比较，不一致时打印 FAIL 并 `$fatal`，全部一致时打印 PASS。
 2. Muse 执行：用 Icarus 编译运行；用 `verilator --lint-only -Wall` 检查 `mux2.v`，警告要清零或写明原因。

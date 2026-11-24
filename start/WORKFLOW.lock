@@ -1,10 +1,10 @@
-# learning-workflow 0543c09（双线）：由 sync.py 生成，不要手动修改
+# learning-workflow fac6544（双线）：由 sync.py 生成，不要手动修改
 5e9b1949def626743af9b308d42aa069769a9eb39d8b656aa2a1b6388e085b96  AGENTS.md
 a4dc52fbf67a27f7b05d4da2e5aeea54e21572e99f0a7039b17fa2aafc9790ae  GEMINI.md
 41a5970774f809f275680831386db3f6b76be30bb0554b3a6208a0a142a2cbef  start/RULES.md
 175f0204037d10252b3bd5c4ca2252d6a6b567c53148e6306c49280c52c48746  start/prompts/examiner.md
-95075b196e65dbc48d4a641e675e05959508e25b0a7bc034da9076a8ae395856  start/prompts/practice-archiver.md
-6737411fb758afc01b671fafa8182058b96ccf7981f909d631db0a8643cfa1f4  start/prompts/practice-tutor.md
+8dc756ec7e1f1836267d8f7476d7bc8b3fa2a277f947f7da6eb756023f5f0c40  start/prompts/practice-archiver.md
+1835f4fb2900dc136eb8c5a1e517db068373f9af0651c08ac4f4b4f19769300b  start/prompts/practice-tutor.md
 a0511b3c043b781659c64e1a27ca2b015fb2f546914e268efa33fb1a074fe16e  start/prompts/setup.md
 5bf50d5120a037beff8de25984fcb9e67d24e123f7f594bfbe3fef1fb4b5d09d  start/prompts/theory-archiver.md
 9e8a7872000ff4c43df822429487783d412679b5d14dd989704b286b9abb59bb  start/prompts/theory-tutor.md
