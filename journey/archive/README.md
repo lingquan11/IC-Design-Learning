@@ -4,7 +4,9 @@
 
 | 文件 / 目录 | 内容 |
 |---|---|
-| `ROADMAP.md`、`plans/` | 七阶段路线与各阶段计划（含 Stage 01 诊断题，已复用到 I1-T01） |
+| `ROADMAP.md`、`plans/` | 七阶段路线与各阶段计划（含 Stage 01 诊断题） |
 | `CURRICULUM_MAP.md`、`resources/` | 各阶段的课程映射与资源清单（2026-11-08 核查） |
 | `old-README.md`、`START_HERE.md`、`PROGRESS.md` | 旧的首页、会话入口与进度文件（由 `AGENTS.md` 和 `start/STATE.md` 取代） |
 | `CHANGELOG.md`、`CONTRIBUTING.md`、`templates/`、`scripts/` | 旧的变更记录、维护规则、模板和链接检查脚本 |
+| `roadmap-2026-11-23-cpu-first.md`、`i1-campaign-2026-11-23-cpu-first.md` | 2026-11-23 的 CPU 优先版 I1–I5 路线与 I1 战役 |
+| `2026-11-24-dual-lane/` | 2026-11-24 的理论 / 实践双线版：路线、导读表、I1 战役、理论任务卡与理论日志（2026-11-25 改为三栏学习后归档） |

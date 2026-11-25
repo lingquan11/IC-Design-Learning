@@ -1,19 +1,18 @@
-# STATE（≤ 30 行；两条线各自只改自己的小节）
+# STATE（≤ 30 行；三个小节各自维护）
 
-- 更新：2026-11-24
-- 战役：I1 数字逻辑与 Verilog（2027-01-18 → 2027-02-21）→ [campaigns/i1-digital-logic-verilog/campaign.md](campaigns/i1-digital-logic-verilog/campaign.md)
+- 更新：2026-11-25
+- 战役：I1 数字逻辑与 Verilog（2027-01-18 → 2027-02-21）→ [campaign.md](campaigns/i1-digital-logic-verilog/campaign.md)
 
-## 理论线（GPT 维护）
-- 当前理论任务：I1-T01 入门诊断（寒假开始）→ [t01-diagnostic.md](campaigns/i1-digital-logic-verilog/theory/t01-diagnostic.md)
-- 上次停在哪：尚未开始；2026-11-08 的七阶段体系没有执行
-- 未解决的问题：数字逻辑与 Verilog 的真实起点未知（I1-T01 诊断）
-- 下一步：寒假第一天对 GPT 说"开始理论学习"
+## 阅读（Muse 记录）
+- 当前阅读：I1-R01 Harris & Harris 第 1 章（可以提前读）
+- 下一步：读完对 Muse 说"读完 I1-R01"
 
-## 实践线（Muse 维护）
-- 当前实践任务：I1-P01 第一个自检模块 mux2（依赖 I1-S01）→ [p01-first-module.md](campaigns/i1-digital-logic-verilog/practice/p01-first-module.md)
+## 编程（GPT 维护）
+- 当前编程任务：I1-P01 HDLBits：Verilog 语法与组合逻辑（寒假开始）→ [p01-hdlbits-combinational.md](campaigns/i1-digital-logic-verilog/p01-hdlbits-combinational.md)
 - 上次停在哪：尚未开始；已有成果 E1、E2 由 AI 执行，I3、I5 中亲手重做
-- 下一步：先和 Muse 完成 I1-S01（可以提前做），再说"开始实践"
+- 卡点：—
 
-## 环境（Muse 维护）
-- 待 I1-S01 填写：WSL2 发行版、OSS CAD Suite / Icarus / Verilator / Yosys 版本（详见 `results/hw/environment.md`）
-- 寒假起止日期要按校历确认，确认后修改 campaign.md 的周期
+## 动手（Muse 维护）
+- 当前动手任务：I1-H01 OSS CAD Suite + cocotb（可以提前做）→ [h01-hdl-toolchain.md](campaigns/i1-digital-logic-verilog/h01-hdl-toolchain.md)
+- 环境：待 I1-H01 填写（详见 `results/hw/environment.md`）
+- 待确认：寒假起止日期按校历确认后修改 campaign.md 的周期
