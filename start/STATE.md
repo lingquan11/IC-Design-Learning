@@ -8,7 +8,7 @@
 - 下一步：读完对 Muse 说"读完 I1-R01"
 
 ## 编程（GPT 维护）
-- 当前编程任务：I1-P01 HDLBits：Verilog 语法与组合逻辑（寒假开始）→ [p01-hdlbits-combinational.md](campaigns/i1-digital-logic-verilog/p01-hdlbits-combinational.md)
+- 当前编程任务：I1-P01 第一个自检模块 mux2（依赖 I1-H01、H02，寒假开始）→ [p01-first-module.md](campaigns/i1-digital-logic-verilog/p01-first-module.md)
 - 上次停在哪：尚未开始；已有成果 E1、E2 由 AI 执行，I3、I5 中亲手重做
 - 卡点：—
 

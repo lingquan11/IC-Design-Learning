@@ -1,6 +1,6 @@
 # I1-H01 环境：OSS CAD Suite + cocotb
 
-- **栏**：动手（Muse，按 `start/prompts/hands-on.md`） | **计划用时**：1h | **先读**：无 | **被依赖**：I1-P02 起的全部仿真任务
+- **栏**：动手（Muse，按 `start/prompts/hands-on.md`） | **计划用时**：1h | **先读**：无 | **被依赖**：I1-P01 起的全部仿真任务
 - **可以提前做**：不必等到寒假；AI-Infra 的 C1-H01 已经装好 WSL2 的话，这里直接复用
 
 ## 官方文档
