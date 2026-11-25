@@ -1,18 +1,18 @@
 # IC-Design-Learning
 
-A structured learning journey from digital circuits to my own NPU. 从数字逻辑、片上总线到自己设计的 NPU：读教材和经典论文学理论，用开源工具亲手完成 RTL、验证和后端，每一步都有机器验收。
+A structured learning journey from digital circuits to my own NPU. 从数字逻辑、片上总线到自己设计的 NPU：读主教材学理论、在线题库做练习，用开源工具亲手完成 RTL、验证和后端，每一步都有机器验收。
 
 ## 学习进度
 <!-- progress:start -->
 ```
 当前战役 I1 数字逻辑与 Verilog · 截止 2027-02-21
-  阅读 ░░░░░░░░░░░░░░░░░░░░   0%  0/8 项完成 · 已用 0h / 计划 15h
-  编程 ░░░░░░░░░░░░░░░░░░░░   0%  0/6 项完成 · 已用 0h / 计划 23.5h
+  阅读 ░░░░░░░░░░░░░░░░░░░░   0%  0/6 项完成 · 已用 0h / 计划 13h
+  编程 ░░░░░░░░░░░░░░░░░░░░   0%  0/4 项完成 · 已用 0h / 计划 18h
   动手 ░░░░░░░░░░░░░░░░░░░░   0%  0/3 项完成 · 已用 0h / 计划 3.5h
 整条路线 I1 → I5
   ░░░░░░░░░░░░░░░░░░░░   0%  0/5 个战役完成
 当前阅读 I1-R01 Harris & Harris 第 1 章（可以提前读）
-当前编程任务 I1-P01 HDLBits：Verilog 语法与组合逻辑（寒假开始）
+当前编程任务 I1-P01 第一个自检模块 mux2（依赖 I1-H01、H02，寒假开始）
 当前动手任务 I1-H01 OSS CAD Suite + cocotb（可以提前做）
 最近学习 2026-11-25
 ```
@@ -21,8 +21,8 @@ A structured learning journey from digital circuits to my own NPU. 从数字逻�
 ## 我怎么开始学习
 | 我想 | 怎么做 |
 |---|---|
-| 学理论 | 自己读当前阅读任务的长文（不和 AI 对话，不考核）；读完对 Muse 说"读完 <R编号>" |
-| 写代码（RTL、testbench、HDLBits） | GPT："开始写代码" … "结束"（结束时自动归档） |
+| 学理论（主线）+ 做练习（支线，选做） | 读 Harris & Harris 的当前章节（不和 AI 对话，不考核）；配套练习在 HDLBits 上做；读完 / 做完对 Muse 说"读完 <R编号>" / "做完 <S编号>" |
+| 写代码（RTL、testbench） | GPT："开始写代码" … "结束"（结束时自动归档） |
 | 装环境、跑仿真 / 综合 / 后端 | Muse："准备环境" 或 "做 <H任务ID>" |
 | 看整条路线 | [ROADMAP](start/ROADMAP.md)：I1 数字逻辑 → I2 总线与跨时钟域 → I3 NPU 设计 → I4 UVM 验证 → I5 后端与演示 |
 
