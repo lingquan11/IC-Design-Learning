@@ -31,12 +31,12 @@
 ---
 
 ## I1 数字逻辑与 Verilog
-- **阅读**：Harris & Harris, *Digital Design and Computer Architecture: RISC-V Edition* 第 1–4 章与第 5 章的算术电路、时序构件两节；Cummings, *Nonblocking Assignments in Verilog Synthesis, Coding Styles That Kill!*（[SNUG 2000](http://www.sunburst-design.com/papers/CummingsSNUG2000SJ_NBA.pdf)）；Jacob et al., *Integer-Arithmetic-Only Inference*（[arXiv:1712.05877](https://arxiv.org/abs/1712.05877)）第 1–2 节
+- **阅读**：Harris & Harris, [*Digital Design and Computer Architecture: RISC-V Edition*](https://shop.elsevier.com/books/digital-design-and-computer-architecture-risc-v-edition/harris/978-0-12-820064-3)（[作者课件](https://pages.hmc.edu/harris/class/e85/old/fall24/)）第 1–4 章与第 5 章的算术电路、时序构件两节；Cummings, *Nonblocking Assignments in Verilog Synthesis, Coding Styles That Kill!*（[SNUG 2000](http://www.sunburst-design.com/papers/CummingsSNUG2000SJ_NBA.pdf)）；Jacob et al., *Integer-Arithmetic-Only Inference*（[arXiv:1712.05877](https://arxiv.org/abs/1712.05877)）第 1–2 节
 - **编程**：HDLBits 组合 → 第一个自检模块 → 组合模块 → HDLBits always 与时序 → 时序模块与 FSM → **INT8 MAC 单元**（I3 PE 的前身）
 - **动手**：OSS CAD Suite 工具链 → 回归脚本与 CI → Yosys 综合与收尾
 
 ## I2 片上总线与跨时钟域
-- **阅读**（按此顺序）：Cummings, *Clock Domain Crossing (CDC) Design & Verification Techniques Using SystemVerilog*（[SNUG 2008](http://www.sunburst-design.com/papers/CummingsSNUG2008Boston_CDC.pdf)）；Cummings, *Simulation and Synthesis Techniques for Asynchronous FIFO Design*（[SNUG 2002](http://www.sunburst-design.com/papers/CummingsSNUG2002SJ_FIFO1.pdf)）；ZipCPU, [Getting started with formal verification](https://zipcpu.com/blog/2017/10/19/formal-intro.html)（异步 FIFO 的断言要用）；ARM AMBA APB 规范（IHI 0024）与 AXI 规范（IHI 0022）的 AXI4-Lite 部分（developer.arm.com 下载）；ZipCPU, [AXI-Lite 形式化验证](https://zipcpu.com/formal/2018/12/28/axilite.html)
+- **阅读**（按此顺序）：Cummings, *Clock Domain Crossing (CDC) Design & Verification Techniques Using SystemVerilog*（[SNUG 2008](http://www.sunburst-design.com/papers/CummingsSNUG2008Boston_CDC.pdf)）；Cummings, *Simulation and Synthesis Techniques for Asynchronous FIFO Design*（[SNUG 2002](http://www.sunburst-design.com/papers/CummingsSNUG2002SJ_FIFO1.pdf)）；ZipCPU, [Getting started with formal verification](https://zipcpu.com/blog/2017/10/19/formal-intro.html)（异步 FIFO 的断言要用）；ARM [AMBA APB 规范（IHI 0024）](https://developer.arm.com/documentation/ihi0024/latest/)与 [AXI 规范（IHI 0022）](https://developer.arm.com/documentation/ihi0022/latest/)的 AXI4-Lite 部分；ZipCPU, [AXI-Lite 形式化验证](https://zipcpu.com/formal/2018/12/28/axilite.html)
 - **编程**：同步 FIFO → 异步 FIFO（格雷码 + 两级同步 + 断言）→ APB 从设备寄存器堆 → AXI4-Lite 从设备（握手性质）
 - **动手**：SymbiYosys 环境；运行形式化证明与双时钟随机仿真；CI
 
@@ -46,12 +46,12 @@
 - **动手**：用 PyTorch 训练 LeNet 并导出 INT8 权重与测试向量；MNIST 端到端仿真；综合面积与频率报告
 
 ## I4 验证：SystemVerilog / UVM
-- **阅读**：Spear & Tumbush, *SystemVerilog for Verification*（类、随机约束、覆盖率相关章节）；Ray Salemi, *The UVM Primer*；Siemens [Verification Academy UVM Cookbook](https://verificationacademy.com/cookbook/uvm-universal-verification-methodology)（按需）
+- **阅读**：Spear & Tumbush, [*SystemVerilog for Verification*](https://doi.org/10.1007/978-1-4614-0715-7)（第 3 版，类、随机约束、覆盖率相关章节）；Ray Salemi, *The UVM Primer*（[作者的配套代码](https://github.com/raysalemi/uvmprimer)，按章节对照）；Siemens [Verification Academy UVM Cookbook](https://verificationacademy.com/cookbook/uvm-universal-verification-methodology)（按需）
 - **编程**：为 I2 的 APB 和 FIFO 写 agent、driver、monitor、scoreboard、sequence，再扩展到 NPU 顶层；功能覆盖率
 - **动手**：Verilator + UVM（参照 [Antmicro 示例](https://github.com/antmicro/verilator-uvm-example)）或 cocotb + [pyuvm](https://github.com/pyuvm/pyuvm) 的环境；回归与覆盖率报告接入 CI
 
 ## I5 实现与演示
-- **阅读**：Kahng et al., *VLSI Physical Design: From Graph Partitioning to Timing Closure*（布局、时钟树、布线、时序收敛章节）；OpenROAD、LibreLane、SkyWater SKY130 官方文档中的流程说明
+- **阅读**：Kahng et al., [*VLSI Physical Design: From Graph Partitioning to Timing Closure*](https://doi.org/10.1007/978-3-030-96415-3)（第 2 版，布局、时钟树、布线、时序收敛章节）；[OpenROAD](https://openroad.readthedocs.io/en/latest/)、[LibreLane](https://librelane.readthedocs.io/en/latest/)、[SkyWater SKY130](https://skywater-pdk.readthedocs.io/en/main/) 官方文档中的流程说明
 - **编程**：为 PE 阵列插入流水级修复 setup；FPGA 顶层封装
 - **动手**：SKY130 后端全流程（亲手重做 [systolic2x2-asic-backend](https://github.com/lingquan11/systolic2x2-asic-backend)）、DRC / LVS；FPGA 烧写与演示；可选提交 [Tiny Tapeout](https://tinytapeout.com/)
 
