@@ -1,6 +1,6 @@
 # IC-Design-Learning
 
-A structured learning journey from digital circuits to my own NPU. 从数字逻辑、片上总线到自己设计的 NPU：跟着名校课程学理论，用开源工具亲手完成 RTL、验证和后端，每一步都有机器验收。
+**【已封存 / Archived】本仓不再更新，已完成的成果在文末两个仓：[systolic-mac-1x4](https://github.com/lingquan11/systolic-mac-1x4)、[systolic2x2-asic-backend](https://github.com/lingquan11/systolic2x2-asic-backend)。** A structured learning journey from digital circuits to my own NPU. 从数字逻辑、片上总线到自己设计的 NPU：跟着名校课程学理论，用开源工具亲手完成 RTL、验证和后端，每一步都有机器验收。
 
 ## 学习进度
 <!-- progress:start -->
