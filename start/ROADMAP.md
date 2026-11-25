@@ -20,7 +20,7 @@
 ## 战役总表
 | ID | 战役 | 窗口 | 预算 | 唯一交付物 | 必做验收摘要 | 状态 |
 |---|---|---|---:|---|---|---|
-| I1 | 数字逻辑与 Verilog | 2027-01-18 → 2027-02-21（寒假，按校历调整） | 40–45h | `results/basics/`：组合 / 时序模块 + INT8 MAC 单元 | 读完 Harris & Harris 第 1–5 章；每个模块自检 testbench + 错误注入；INT8 MAC 与 Python 参考模型随机回归 0 失败 | 未开始 |
+| I1 | 数字逻辑与 Verilog | 2027-01-18 → 2027-02-21（寒假，按校历调整） | 40–45h | `results/basics/`：组合 / 时序模块 + INT8 MAC 单元 | 读完 Harris & Harris 第 1–4 章与第 5 章相关两节；每个模块自检 testbench + 错误注入；INT8 MAC 与 Python 参考模型随机回归 0 失败 | 未开始 |
 | I2 | 片上总线与跨时钟域 | 寒假后，约 4 周 | 35–45h | `results/bus-and-cdc/` | 异步 FIFO 双时钟随机测试 + SymbiYosys 证明空满性质；APB / AXI4-Lite 协议性质形式化证明通过 | 未开始 |
 | I3 | NPU 设计：LeNet INT8 加速器 | 约 6–8 周 | 60–80h | `results/npu/` | 自己写的 spec 与参考模型；PE 阵列与卷积 / 池化 / 全连接数据通路；MNIST 测试图片端到端仿真与参考模型逐字节一致 | 未开始 |
 | I4 | 验证：SystemVerilog / UVM | 约 5–6 周 | 45–60h | `results/npu/verif/` | UVM 环境先验证 I2 的 APB 和 FIFO，再验证 NPU 顶层；功能覆盖率报告；回归接入 CI | 未开始 |
@@ -31,12 +31,12 @@
 ---
 
 ## I1 数字逻辑与 Verilog
-- **阅读**：Harris & Harris, *Digital Design and Computer Architecture: RISC-V Edition* 第 1–5 章；Cummings, *Nonblocking Assignments in Verilog Synthesis, Coding Styles That Kill!*（[SNUG 2000](http://www.sunburst-design.com/papers/CummingsSNUG2000SJ_NBA.pdf)）；Jacob et al., *Integer-Arithmetic-Only Inference*（[arXiv:1712.05877](https://arxiv.org/abs/1712.05877)）第 1–2 节
-- **编程**：HDLBits 组合 → 第一个自检模块 → 组合模块 → HDLBits 时序 → 时序模块与 FSM → **INT8 MAC 单元**（I3 PE 的前身）
+- **阅读**：Harris & Harris, *Digital Design and Computer Architecture: RISC-V Edition* 第 1–4 章与第 5 章的算术电路、时序构件两节；Cummings, *Nonblocking Assignments in Verilog Synthesis, Coding Styles That Kill!*（[SNUG 2000](http://www.sunburst-design.com/papers/CummingsSNUG2000SJ_NBA.pdf)）；Jacob et al., *Integer-Arithmetic-Only Inference*（[arXiv:1712.05877](https://arxiv.org/abs/1712.05877)）第 1–2 节
+- **编程**：HDLBits 组合 → 第一个自检模块 → 组合模块 → HDLBits always 与时序 → 时序模块与 FSM → **INT8 MAC 单元**（I3 PE 的前身）
 - **动手**：OSS CAD Suite 工具链 → 回归脚本与 CI → Yosys 综合与收尾
 
 ## I2 片上总线与跨时钟域
-- **阅读**：Cummings, *Clock Domain Crossing (CDC) Design & Verification Techniques Using SystemVerilog*（[SNUG 2008](http://www.sunburst-design.com/papers/CummingsSNUG2008Boston_CDC.pdf)）；Cummings, *Simulation and Synthesis Techniques for Asynchronous FIFO Design*（[SNUG 2002](http://www.sunburst-design.com/papers/CummingsSNUG2002SJ_FIFO1.pdf)）；ARM AMBA APB 规范（IHI 0024）与 AXI 规范（IHI 0022）的 AXI4-Lite 部分（developer.arm.com 下载）；ZipCPU, [Getting started with formal verification](https://zipcpu.com/blog/2017/10/19/formal-intro.html) 与 [AXI-Lite 形式化验证](https://zipcpu.com/formal/2018/12/28/axilite.html)
+- **阅读**（按此顺序）：Cummings, *Clock Domain Crossing (CDC) Design & Verification Techniques Using SystemVerilog*（[SNUG 2008](http://www.sunburst-design.com/papers/CummingsSNUG2008Boston_CDC.pdf)）；Cummings, *Simulation and Synthesis Techniques for Asynchronous FIFO Design*（[SNUG 2002](http://www.sunburst-design.com/papers/CummingsSNUG2002SJ_FIFO1.pdf)）；ZipCPU, [Getting started with formal verification](https://zipcpu.com/blog/2017/10/19/formal-intro.html)（异步 FIFO 的断言要用）；ARM AMBA APB 规范（IHI 0024）与 AXI 规范（IHI 0022）的 AXI4-Lite 部分（developer.arm.com 下载）；ZipCPU, [AXI-Lite 形式化验证](https://zipcpu.com/formal/2018/12/28/axilite.html)
 - **编程**：同步 FIFO → 异步 FIFO（格雷码 + 两级同步 + 断言）→ APB 从设备寄存器堆 → AXI4-Lite 从设备（握手性质）
 - **动手**：SymbiYosys 环境；运行形式化证明与双时钟随机仿真；CI
 
