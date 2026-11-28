@@ -1,7 +1,7 @@
 # I1-H01 环境：OSS CAD Suite + cocotb
 
 - **栏**：动手（Muse，按 `start/prompts/hands-on.md`） | **计划用时**：1h | **先读**：无 | **被依赖**：I1-P01 起的全部仿真任务
-- **可以提前做**：不必等到寒假；AI-Infra 的 C1-H01 已经装好 WSL2 的话，这里直接复用
+- **可以提前做**：不必等到寒假；ai-infra-plan 第 1 周已经装好 WSL2 的话，这里直接复用
 
 ## 官方文档
 - OSS CAD Suite（YosysHQ 的二进制发行版，包含 Icarus Verilog、Verilator、Yosys、SymbiYosys、GTKWave 等）：https://github.com/YosysHQ/oss-cad-suite-build

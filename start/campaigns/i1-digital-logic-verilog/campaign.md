@@ -55,4 +55,4 @@
 2. （仍然超时）I1-P02 只做加法器，参数化多路选择器移到加分
 
 ## 收尾定义
-截止日：三栏必做全部完成 → 打 `i1-v1.0` → Muse 更新 ROADMAP 和时间线 → 回到 AI-Infra-Learning 的 C2。没完成的必做项在 `results/basics/README.md` 的"边界"中写明，同样收尾。
+截止日：三栏必做全部完成 → 打 `i1-v1.0` → Muse 更新 ROADMAP 和时间线 → 回到 ai-infra-plan。没完成的必做项在 `results/basics/README.md` 的"边界"中写明，同样收尾。

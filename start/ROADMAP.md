@@ -24,7 +24,7 @@
 | I5 | Kahng 等, *VLSI Physical Design* | [Tiny Tapeout](https://tinytapeout.com/)：用开源流程把小设计真正流片（可选） |
 
 ## 衔接
-- 寒假前在其他仓库：cpp-matmul 的 C0、AI-Infra-Learning 的 C1（CUDA SGEMM）；本仓库从寒假开始，之后与 AI-Infra 的 C2–C5 按学期课表交替
+- 寒假前在其他仓库：cpp-matmul 的 C0，之后接 [ai-infra-plan](https://github.com/lingquan11/ai-infra-plan)（代码放在 [AI-Infra-Learning](https://github.com/lingquan11/AI-Infra-Learning)）；本仓库从寒假开始，之后与 ai-infra-plan 按学期课表交替
 - 已有成果 E1（1×4 脉动阵列行）、E2（2×2 阵列 SKY130 后端）由 AI 执行，I3、I5 中由我亲手重做
 
 ## 战役总表
