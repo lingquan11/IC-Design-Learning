@@ -7,7 +7,7 @@
 
 与其他仓库的交叉：
 - cpp-matmul 归档的 OS/WS/IS 数据流访存账本 → I3 的数据流分析可以直接复用
-- AI-Infra-Learning C1 的 GPU 分块 GEMM → 与 I3 的脉动阵列做数据复用对照
+- ai-infra-plan 第 14 周的 GPU 分块 GEMM → 与 I3 的脉动阵列做数据复用对照
 
 ## CPU 支线（可选，原 I1 / I2，计划见 `journey/archive/i1-campaign-2026-11-23-cpu-first.md`）
 - 单周期 RV32I（ETH DDCA L7–L10，Harris & Harris 第 6–7 章），用 riscv-tests `rv32ui` 回归
